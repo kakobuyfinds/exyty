@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>SuperBuy spreadsheet — kategorie, rozmiary i zdjęcia QC</title>
+<meta name="description" content="Polski przewodnik po SuperBuy spreadsheet. Przeglądaj buty, odzież i dodatki w HipoBuyFind oraz sprawdź linki, wymiary, zdjęcia QC i wysyłkę do Polski.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="SuperBuy spreadsheet — kategorie, rozmiary i zdjęcia QC">
+<meta property="og:description" content="Dziesięć kategorii zakupowych i polska instrukcja porównywania ofert przed zamówieniem.">
+<meta name="theme-color" content="#153d36">
+<link rel="preconnect" href="https://www.tike.gr">
+<!-- Materiał porównawczy: su-perbuy.com, repsheet.net/spreadsheet/superbuy,
+superbuyspreadsheet.org, sheet-superbuy.net, sheetssuperbuy.com/browse,
+superbuypromo.com, sopel.fit/superbuy-spreadsheet, superbuyship.com,
+superbuy-spreadsheet.org, sheetsuperbuy.com.
+Bezpośredni odczyt pierwszej strony Google był niedostępny; domeny pochodzą
+z wyników wyszukiwania tego samego hasła. Kolejność Google nie została zweryfikowana.
+Powtarzające się tematy: kategorie, linki, rozmiary, zdjęcia QC i wysyłka.
+Frazy dodatkowe: linki do produktów, tabela rozmiarów, zdjęcia QC z magazynu,
+wysyłka z Chin do Polski, porównanie ofert.
+Frazy szczegółowe: aktualny link do produktu, kod modelu butów, nazwa koloru,
+dostępność rozmiaru, oferty z Taobao, oferty z Weidian, oferty z 1688,
+warunki zwrotu u sprzedawcy, rozmiar EU, długość wkładki w centymetrach,
+szerokość bluzy pod pachami, długość rękawa, obwód pasa, długość nogawki,
+tabela rozmiarów kompletu, zdjęcia podeszew, metka z rozmiarem,
+zdjęcie wkładki obok miarki, dodatkowe zdjęcia QC, waga rzeczywista paczki,
+waga gabarytowa paczki, konsolidacja paczek, opłaty importowe do Polski,
+transport krajowy w Chinach, przesyłka międzynarodowa, wymiary torebki,
+długość paska, obwód głowy, długość bransoletki, wykończenie jedwabnej apaszki. -->
+<style>
+:root{color-scheme:light;--ink:#16312c;--muted:#49615a;--paper:#fbf7ed;--line:#cbd5c9;--green:#153d36;--lime:#e6efb4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+a{color:inherit;text-underline-offset:.2em}
+a:focus-visible,summary:focus-visible{outline:3px solid #bf583a;outline-offset:4px}
+.wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+header{background:var(--green);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-block:1rem}
+.brand{font-weight:800;letter-spacing:.025em}
+header span{color:var(--lime)}
+main{padding-block:1.5rem 3rem}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:clamp(1rem,4vw,4rem);padding:clamp(1.2rem,4vw,3.5rem);background:var(--green);color:white;border-radius:1.2rem}
+h1,h2,h3{line-height:1.12;margin:0 0 .75rem}
+h1{font-size:clamp(2.35rem,6vw,5rem);letter-spacing:-.06em;overflow-wrap:anywhere}
+h2{font-size:clamp(1.65rem,3vw,2.4rem);letter-spacing:-.035em}
+h3{font-size:1.3rem}
+p{margin:.6rem 0 1rem}
+.hero p{max-width:48ch}
+.hero figure{margin:0;background:#fff;color:var(--ink);border-radius:.9rem;overflow:hidden}
+.hero img{display:block;width:100%;height:clamp(10rem,26vw,20rem);object-fit:contain}
+figcaption{padding:.45rem .75rem;font-size:.9rem}
+.button{display:inline-block;padding:.55rem .95rem;border-radius:.5rem;background:var(--lime);color:var(--ink);font-weight:750}
+section{margin-top:2.25rem}
+.categories,.guides,.gallery{display:grid;gap:.65rem}
+.categories{list-style:none;padding:0;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr))}
+.categories a{display:flex;height:100%;align-items:center;padding:.6rem .75rem;min-height:3rem;background:#fff;border:1px solid var(--line);border-radius:.6rem;font-weight:650}
+.categories a:hover{background:var(--lime)}
+.guides{grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+article{background:#fff;border:1px solid var(--line);padding:1.2rem;border-radius:.75rem}
+.gallery{grid-template-columns:repeat(auto-fit,minmax(9rem,1fr))}
+.gallery figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:.6rem;overflow:hidden}
+.gallery img{display:block;width:100%;height:8.5rem;object-fit:contain;background:#fff}
+details{padding:.75rem 0;border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:750}
+details p{max-width:72ch;margin-bottom:.25rem}
+.note{color:var(--muted);max-width:72ch}
+footer{border-top:1px solid var(--line);padding:1rem 0}
+@media(max-width:42rem){.hero,.guides{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"WebPage","name":"SuperBuy spreadsheet — kategorie, rozmiary i zdjęcia QC","inLanguage":"pl","description":"Polski przewodnik po SuperBuy spreadsheet. Przeglądaj buty, odzież i dodatki w HipoBuyFind oraz sprawdź linki, wymiary, zdjęcia QC i wysyłkę do Polski."},
+    {"@type":"FAQPage","inLanguage":"pl","mainEntity":[
+      {"@type":"Question","name":"Co to jest SuperBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"To arkusz, który porządkuje linki do produktów według kategorii i pomaga porównać oferty. Kategorie na tej stronie otwierają katalog HipoBuyFind."}},
+      {"@type":"Question","name":"Jak dobrać rozmiar bez przymierzania?","acceptedAnswer":{"@type":"Answer","text":"Zmierz dobrze pasujący produkt i porównaj wynik z tabelą sprzedawcy dla wybranego wariantu. W butach zwróć uwagę na długość wkładki, a w odzieży na szerokość i długość mierzoną na płasko."}},
+      {"@type":"Question","name":"Czy zdjęcia QC potwierdzają autentyczność?","acceptedAnswer":{"@type":"Answer","text":"Zdjęcia QC pomagają ocenić widoczny stan, zgodność koloru i wymiary egzemplarza. Autentyczność wymaga osobnej weryfikacji pochodzenia i dokumentów zakupu."}},
+      {"@type":"Question","name":"Jak oszacować koszt wysyłki do Polski?","acceptedAnswer":{"@type":"Answer","text":"Ustaw Polskę jako kraj dostawy, porównaj taryfy dla wagi i wymiarów paczki oraz sprawdź, które opłaty są już wliczone w wycenę. Zsumuj cenę produktów, transport i ewentualne dodatkowe opłaty widoczne przed płatnością."}},
+      {"@type":"Question","name":"Co zrobić, jeśli link do produktu wygasł?","acceptedAnswer":{"@type":"Answer","text":"Wyszukaj nazwę lub kod modelu w tej samej kategorii i porównaj zdjęcia, wariant oraz dane sprzedawcy przed zapisaniem nowego linku."}}
+    ]}
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/exyty/">
+</head>
+<body>
+<header>
+<div class="wrap"><a class="brand" href="https://www.hipobuyfind.com">hipobuyfind.com</a><span>Poradnik zakupowy po polsku</span></div>
+</header>
+<main class="wrap">
+<div class="hero">
+<div>
+<h1>SuperBuy spreadsheet</h1>
+<p>Zacznij od kategorii i porównaj dwa podobne produkty. Przed wyborem sprawdź aktualny link, wymiary wybranego wariantu i zdjęcia kontroli jakości, jeśli są dostępne.</p>
+<a class="button" href="https://www.hipobuyfind.com">Otwórz katalog HipoBuyFind</a>
+</div>
+<figure>
+<img src="https://www.tike.gr/files/images/products/media/CW2/CW2288-111/images/CW2288-111.jpg.webp" width="640" height="480" alt="Biały Nike Air Force 1 ’07 widziany z boku" fetchpriority="high">
+<figcaption>Nike Air Force 1 ’07 · zdjęcie poglądowe</figcaption>
+</figure>
+</div>
+<section aria-labelledby="kategorie">
+<h2 id="kategorie">Kategorie w HipoBuyFind</h2>
+<nav aria-label="Kategorie produktów">
+<ul class="categories">
+<li><a href="https://hipobuyfind.com/category-911-Shoes.html">Buty</a></li>
+<li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Bluzy i swetry</a></li>
+<li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirty</a></li>
+<li><a href="https://hipobuyfind.com/category-914-Jackets.html">Kurtki</a></li>
+<li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Spodnie i szorty</a></li>
+<li><a href="https://hipobuyfind.com/category-916-Headwear.html">Nakrycia głowy</a></li>
+<li><a href="https://hipobuyfind.com/category-917-Sets.html">Komplety</a></li>
+<li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Bielizna</a></li>
+<li><a href="https://hipobuyfind.com/category-919-Jersey.html">Koszulki sportowe</a></li>
+<li><a href="https://hipobuyfind.com/category-920-Accessories.html">Akcesoria</a></li>
+</ul>
+</nav>
+</section>
+<section aria-labelledby="poradniki">
+<h2 id="poradniki">Jak porównać oferty przed zakupem</h2>
+<div class="guides">
+<article>
+<h3>Linki do produktów i wybór wariantu</h3>
+<p>Otwórz aktualną ofertę i sprawdź kod modelu, nazwę koloru oraz dostępność rozmiaru. Przy porównywaniu ofert z Taobao, Weidian i 1688 zapisz link źródłowy i datę sprawdzenia. Porównaj też warunki zwrotu u sprzedawcy.</p>
+<p>Przy butach zestaw rozmiar EU z długością wkładki w centymetrach. W bluzie porównaj szerokość pod pachami i długość rękawa. W spodniach sprawdź obwód pasa i długość nogawki. W komplecie zweryfikuj tabelę rozmiarów obu części.</p>
+</article>
+<article>
+<h3>Zdjęcia QC z magazynu</h3>
+<p>Zdjęcia QC to fotografie do kontroli jakości. Przy butach poproś o ujęcie obu podeszew, metki z rozmiarem i wkładki obok miarki. W odzieży sprawdź szwy, nadruk i działanie zamka, jeśli można to potwierdzić. Przy akcesoriach obejrzyj zapięcie, krawędzie i widoczne ślady zużycia.</p>
+<p>Porównuj zdjęcia wybranego egzemplarza z ofertą. Jeśli wymiar lub kolor budzi wątpliwości, poproś o dodatkowe ujęcie przed zatwierdzeniem wysyłki.</p>
+</article>
+<article>
+<h3>Wysyłka z Chin do Polski</h3>
+<p>Zapisz wagę rzeczywistą oraz wymiary paczki. Porównaj, jak przewoźnicy liczą wagę gabarytową i co obejmuje cena dostawy. Przy konsolidacji paczek sprawdź, czy po połączeniu zmieni się próg wagowy albo dopłata za rozmiar.</p>
+<p>Przed płatnością zweryfikuj walutę rozliczenia, koszt transportu krajowego, przesyłkę międzynarodową i informację o opłatach importowych dla dostawy do Polski.</p>
+</article>
+<article>
+<h3>Torebki, nakrycia głowy i biżuteria</h3>
+<p>Przy torebce sprawdź wymiary i długość paska. Przy czapce zmierz obwód głowy i porównaj go z zakresem regulacji. W biżuterii zapisz długość bransoletki, materiał i rodzaj zapięcia. Przy jedwabnej apaszce obejrzyj wykończenie brzegów i sprawdź wymiary na płasko.</p>
+<p>Gdy kupujesz produkt markowy, sprawdź pochodzenie, dokument zakupu i zasady zwrotu. Fotografie katalogowe służą do porównania wyglądu modelu.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="galeria">
+<h2 id="galeria">Przykłady modeli i detali</h2>
+<p class="note">Zdjęcia poglądowe. Dostępność produktów sprawdzisz w aktualnych ofertach.</p>
+<div class="gallery">
+<figure><img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/b31c6567-78d4-41b3-b463-ef15c36b7e0d/M%2BNK%2BCLUB%2BFT%2BPO%2BHOODIE.png" width="592" height="592" loading="lazy" decoding="async" alt="Czarna bluza Nike Club z kapturem"><figcaption>Bluza Nike Club</figcaption></figure>
+<figure><img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Czapka Gucci z daszkiem i wzorem GG"><figcaption>Czapka Gucci GG</figcaption></figure>
+<figure><img src="https://kream-phinf.pstatic.net/MjAyNTA3MzFfODgg/MDAxNzUzOTAzNzczMjI2.C_bUSFIia1lWF8jPWkaxb0R0jGgk5QHgxxC2VgUSIcog.Gih5_o13g2Oxn-XeWEvGvisVvvBoiE3bKbXtDF43h-kg.PNG/a_06b29dabdf8149b9ba894b297628c2f4.png" width="640" height="640" loading="lazy" decoding="async" alt="Brązowa torebka Louis Vuitton Speedy 25 z monogramem"><figcaption>Louis Vuitton Speedy 25</figcaption></figure>
+<figure><img src="https://shop.r10s.jp/tokyovintagebrand/cabinet/12758955/imgrc0141965736.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Jedwabna apaszka Hermès Carré 90 we wzór pasków"><figcaption>Apaszka Hermès Carré 90</figcaption></figure>
+<figure><img src="https://a.1stdibscdn.com/dior-cd-navy-bracelet-gold-tone-for-sale/v_21722/v_133002421631325043576/1_master.jpg?auto=webp&amp;disable=upscale&amp;quality=60&amp;width=960" width="960" height="960" loading="lazy" decoding="async" alt="Bransoletka Dior CD Navy w złotym kolorze"><figcaption>Bransoletka Dior CD Navy</figcaption></figure>
+</div>
+</section>
+<section aria-labelledby="faq">
+<h2 id="faq">Najczęstsze pytania</h2>
+<details open><summary>Co to jest SuperBuy spreadsheet?</summary><p>To arkusz, który porządkuje linki do produktów według kategorii i pomaga porównać oferty. Kategorie na tej stronie otwierają katalog HipoBuyFind.</p></details>
+<details><summary>Jak dobrać rozmiar bez przymierzania?</summary><p>Zmierz dobrze pasujący produkt i porównaj wynik z tabelą sprzedawcy dla wybranego wariantu. W butach zwróć uwagę na długość wkładki, a w odzieży na szerokość i długość mierzoną na płasko.</p></details>
+<details><summary>Czy zdjęcia QC potwierdzają autentyczność?</summary><p>Zdjęcia QC pomagają ocenić widoczny stan, zgodność koloru i wymiary egzemplarza. Autentyczność wymaga osobnej weryfikacji pochodzenia i dokumentów zakupu.</p></details>
+<details><summary>Jak oszacować koszt wysyłki do Polski?</summary><p>Ustaw Polskę jako kraj dostawy, porównaj taryfy dla wagi i wymiarów paczki oraz sprawdź, które opłaty są już wliczone w wycenę. Zsumuj cenę produktów, transport i ewentualne dodatkowe opłaty widoczne przed płatnością.</p></details>
+<details><summary>Co zrobić, jeśli link do produktu wygasł?</summary><p>Wyszukaj nazwę lub kod modelu w tej samej kategorii i porównaj zdjęcia, wariant oraz dane sprzedawcy przed zapisaniem nowego linku.</p></details>
+</section>
+</main>
+<footer><div class="wrap"><a href="https://www.hipobuyfind.com">Przejdź do HipoBuyFind</a></div></footer>
+</body>
+</html>
